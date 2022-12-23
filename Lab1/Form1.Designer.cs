@@ -251,6 +251,7 @@
             this.Input2.Name = "Input2";
             this.Input2.Size = new System.Drawing.Size(136, 27);
             this.Input2.TabIndex = 18;
+            this.Input2.TextChanged += new System.EventHandler(this.Input2_TextChanged);
             // 
             // Form1
             // 

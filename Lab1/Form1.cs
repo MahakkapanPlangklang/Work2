@@ -12,16 +12,17 @@ namespace Lab1
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-
+            if (Input.Text.Length > 0)
+            {
+                Input.Text = Convert.ToDouble(Input.Text).ToString("N0");
+                Input.SelectionStart = Input.Text.Length;
+            }
         }
 
         private void one_Click(object sender, EventArgs e)
         {
             this.Input.Text = this.Input.Text + "1";
             this.Input2.Text = this.Input2.Text + "1";
-
-            //this.Input.Text = "";
-            //this.Input.Text = this.Input.Text + "1";
         }
 
         private void two_Click(object sender, EventArgs e)
@@ -80,11 +81,10 @@ namespace Lab1
 
         private void plus_Click(object sender, EventArgs e)
         {
-            //this.Input.Text = this.Input.Text + "+";
+          
             this.input1 = Double.Parse(this.Input.Text);
             this.Input.Text = "";
             this.op = "+";
-            //this.Input.Text = this.Input.Text + "+";
             this.Input2.Text = this.Input2.Text + "+";
         }
 
@@ -136,7 +136,7 @@ namespace Lab1
             {
                 result = input2;
             }
-            this.Input.Text = result.ToString("N0");
+            this.Input.Text = result.ToString();
             //this.Input2.Text = result.ToString();
         }
 
@@ -144,13 +144,17 @@ namespace Lab1
         {
             Input.Clear();
             Input2.Clear();
-            //double input2 = 0;
             this.op = "C";
         }
 
         private void dot_Click(object sender, EventArgs e)
         {
             this.Input.Text = this.Input.Text + ".";
+        }
+
+        private void Input2_TextChanged(object sender, EventArgs e)
+        {
+          
         }
     }
 }
