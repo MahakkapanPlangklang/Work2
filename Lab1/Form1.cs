@@ -136,7 +136,7 @@ namespace Lab1
             {
                 result = input2;
             }
-            //this.Input.Text = result.ToString("N0");
+            this.Input.Text = result.ToString("N0");
             //this.Input2.Text = result.ToString();
         }
 
