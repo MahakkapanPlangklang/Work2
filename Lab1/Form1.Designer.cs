@@ -278,6 +278,7 @@
             this.Controls.Add(this.three);
             this.Controls.Add(this.two);
             this.Controls.Add(this.one);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
