@@ -12,12 +12,7 @@ namespace Lab1
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            //if (Input.Text.Length > 0)
-            //{
-             //  Input.Text = Convert.ToDouble(Input.Text).ToString();
-             //  Input.SelectionStart = Input.Text.Length;
-            //   this.Input.Text = string.Format("{0:n}", double.Parse(this.Input.Text));
-          //  }
+            
 
         }
 
@@ -84,7 +79,7 @@ namespace Lab1
         private void plus_Click(object sender, EventArgs e)
         {
           
-            this.input1 = Double.Parse(this.Input2.Text);
+            this.input1 = Double.Parse(this.Input.Text);
             this.Input.Text = "";
             this.op = "+";
             this.Input2.Text = this.Input2.Text + "+";
@@ -138,8 +133,7 @@ namespace Lab1
             {
                 result = input2;
             }
-            //this.Input.Text = result.ToString();
-            //this.Input2.Text = result.ToString();
+            
             this.Input.Text = Convert.ToString(result);
             this.Input.Text = string.Format("{0:n}",double.Parse(this.Input.Text));
         }
