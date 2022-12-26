@@ -133,9 +133,9 @@ namespace Lab1
             {
                 result = input2;
             }
-            
+
             this.Input.Text = Convert.ToString(result);
-            this.Input.Text = string.Format("{0:n}",double.Parse(this.Input.Text));
+            this.Input.Text = string.Format("{0:#,##0.##################}", double.Parse(this.Input.Text));
         }
 
         private void button16_Click(object sender, EventArgs e)
